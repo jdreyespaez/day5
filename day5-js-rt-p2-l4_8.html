@@ -1,0 +1,18 @@
+<html>
+	<body>
+		<script>
+
+		function changePowerTotal(totalPower, genID, genStatus, genPower) {
+		  if (genStatus == "on") {
+		    totalPower += genPower;
+		    alert("Generator #" + genID + " is now " + genStatus + ", adding " + genPower + " MW, for a total of " + totalPower + " MW!");
+		  } else if (genStatus == "off") {
+		    totalPower -= genPower;
+		    alert("Generator #" + genID + " is now " + genStatus + ", adding " + genPower + " MW, for a total of " + totalPower + " MW!");
+		  }
+		  return totalPower;
+		}		
+  		
+		</script>
+	</body>
+</html>
